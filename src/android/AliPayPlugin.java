@@ -28,9 +28,9 @@ public class AliPayPlugin extends CordovaPlugin {
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        partner = webView.getPreferences().getString("partner", "");
-        seller = webView.getPreferences().getString("seller", "");
-        privateKey = webView.getPreferences().getString("private_key", "");
+        partner = webView.getPreferences().getString("partnerid", "");
+        seller = webView.getPreferences().getString("selleraccount", "");
+        privateKey = webView.getPreferences().getString("privatekey", "");
     }
 
     @Override
